@@ -8,7 +8,7 @@ const AdminDashboard = () => {
     const [stats, setStats] = useState({});
 
     useEffect(() => {
-  fetch("http://localhost:5000/admin/stats")
+  fetch("https://vehicle-rental-backend-41xy.onrender.com/admin/stats")
     .then(res => res.json())
     .then(data => {
       console.log("STATS 👉", data); // check kar

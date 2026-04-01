@@ -16,7 +16,7 @@ const VehicleDetails = () => {
   
   // 🔥 FETCH VEHICLE DATA
   useEffect(() => {
-    fetch(`http://localhost:5000/vehicle/${id}`)
+    fetch(`https://vehicle-rental-backend-41xy.onrender.com/vehicle/${id}`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data); // 👈 ye add kar
@@ -42,7 +42,7 @@ const VehicleDetails = () => {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/book", {
+      const res = await fetch("https://vehicle-rental-backend-41xy.onrender.com/book", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

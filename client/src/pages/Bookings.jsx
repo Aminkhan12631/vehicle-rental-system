@@ -6,7 +6,7 @@ const Bookings = () => {
 
   useEffect(() => {
     if (user) {
-      fetch(`http://localhost:5000/bookings/${user.email}`)
+      fetch(`https://vehicle-rental-backend-41xy.onrender.com/bookings/${user.email}`)
         .then((res) => res.json())
         .then((data) => setBookings(data))
         .catch((err) => console.log(err));

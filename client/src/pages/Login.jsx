@@ -5,7 +5,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
 
   const handleLogin = async () => {
-  const res = await fetch("http://localhost:5000/login", {
+  const res = await fetch("https://vehicle-rental-backend-41xy.onrender.com/login", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

@@ -7,7 +7,7 @@ const ManageVehicles = () => {
   // 🔥 Fetch vehicles
   const fetchVehicles = async () => {
     try {
-      const res = await fetch("http://localhost:5000/vehicles");
+      const res = await fetch("https://vehicle-rental-backend-41xy.onrender.com/vehicles");
       const data = await res.json();
       setVehicles(data);
     } catch (err) {
@@ -22,7 +22,7 @@ const ManageVehicles = () => {
   // 🔥 DELETE
   const handleDelete = async (id) => {
     try {
-      await fetch(`http://localhost:5000/vehicles/${id}`, {
+      await fetch(`https://vehicle-rental-backend-41xy.onrender.com/vehicles/${id}`, {
         method: "DELETE",
       });
 
@@ -42,7 +42,7 @@ const ManageVehicles = () => {
   const handleUpdate = async () => {
     try {
       await fetch(
-        `http://localhost:5000/vehicles/${editVehicle._id}`,
+        `https://vehicle-rental-backend-41xy.onrender.com/vehicles/${editVehicle._id}`,
         {
           method: "PUT",
           headers: {

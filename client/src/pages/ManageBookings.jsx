@@ -4,7 +4,7 @@ const ManageBookings = () => {
   const [bookings, setBookings] = useState([]);
 
   const fetchBookings = async () => {
-    const res = await fetch("http://localhost:5000/bookings");
+    const res = await fetch("https://vehicle-rental-backend-41xy.onrender.com/bookings");
     const data = await res.json();
     setBookings(data);
   };
@@ -14,7 +14,7 @@ const ManageBookings = () => {
   }, []);
 
   const updateStatus = async (id, status) => {
-    await fetch(`http://localhost:5000/booking/${id}`, {
+    await fetch(`https://vehicle-rental-backend-41xy.onrender.com/booking/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ status }),

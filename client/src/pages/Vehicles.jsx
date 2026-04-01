@@ -20,7 +20,7 @@ useEffect(() => {
 
   // 🔥 FETCH WITH FILTERS (MERGED)
   useEffect(() => {
-    let url = "http://localhost:5000/vehicles?";
+    let url = "https://vehicle-rental-backend-41xy.onrender.com/vehicles?";
 
     if (typeFilter) url += `type=${typeFilter}&`;
     if (fuelFilter) url += `fuel=${fuelFilter}`;

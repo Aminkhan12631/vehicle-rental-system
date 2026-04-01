@@ -6,7 +6,7 @@ const Register = () => {
   const [password, setPassword] = useState("");
 
   const handleRegister = async () => {
-    const res = await fetch("http://localhost:5000/register", {
+    const res = await fetch("https://vehicle-rental-backend-41xy.onrender.com/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

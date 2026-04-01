@@ -22,7 +22,7 @@ const AddVehicle = () => {
     console.log("FINAL DATA 👉", vehicle); // 🔥 check this
 
     try {
-      const res = await fetch("http://localhost:5000/vehicles", {
+      const res = await fetch("https://vehicle-rental-backend-41xy.onrender.com/vehicles", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

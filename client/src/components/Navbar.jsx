@@ -22,7 +22,7 @@ const Navbar = () => {
   // 🔥 LOGIN FUNCTION
   const handleLogin = async () => {
     try {
-      const res = await fetch("http://localhost:5000/login", {
+      const res = await fetch("https://vehicle-rental-backend-41xy.onrender.com/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -48,7 +48,7 @@ const Navbar = () => {
   // 🔥 REGISTER FUNCTION
   const handleRegister = async () => {
     try {
-      const res = await fetch("http://localhost:5000/register", {
+      const res = await fetch("https://vehicle-rental-backend-41xy.onrender.com/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
